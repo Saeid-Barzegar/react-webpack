@@ -6,8 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack server --config config/webpack.config.dev.js --hot",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
-    "typecheck": "tsc --noEmit",
-    "bundle-analyze": "NODE_ENV=production webpack --config config/webpack.config.analyze.js",
+    "bundle:analyze": "NODE_ENV=production webpack --config config/webpack.config.analyze.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
