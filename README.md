@@ -55,6 +55,7 @@ to analyze the final bundle size you can run
 ```bash
 yarn bundle:analyze
 ```
+or
 ```bash
 npm run bundle:analyze
 ```
