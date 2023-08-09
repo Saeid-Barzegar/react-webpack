@@ -19,13 +19,22 @@ To get started, follow these steps to install the project dependencies:
 1. Clone this repository to your local machine.
 2. Open your terminal and navigate to the project directory.
 3. Run the following command to install the required dependencies:
-   run "yarn" or "npm install" 
+```bash
+yarn
+```
+or
+```bash
+npm install
+```
 
 ## Running in Development Mode
 After installation of npm packages run these commands to start the project on development mode
 ```bash
-- yarn start
-- npm run start
+yarn start
+```
+or
+```bash
+npm run start
 ```
 it will run the project on webpack server on port 9000
 your project will be available on "http://localhost:9000" address;
@@ -34,15 +43,20 @@ your project will be available on "http://localhost:9000" address;
 Run the below commands to build the entire project for PRODUCTION
 this command include the maximum optimisation and compression the bundle and images for PRODUCTION
 ```bash
-- yarn build
-- npm run build
+yarn build
+```
+or
+```bash
+npm run build
 ```
 
 # Analyzing Bundle Size
 to analyze the final bundle size you can run 
 ```bash
-- yarn bundle:analyze
-- npm run bundle:analyze
+yarn bundle:analyze
+```
+```bash
+npm run bundle:analyze
 ```
 It will run a service and shows the final bundle size and shows which bundle has the maximum size in your bundle files
 
