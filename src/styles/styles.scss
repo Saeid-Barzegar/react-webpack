@@ -1,4 +1,4 @@
-$background: #f0f0f0;
+$background: #e4f6ff;
 $fontName: Arial, Helvetica, sans-serif;
 
 body {
@@ -9,30 +9,68 @@ body {
   margin: 0;
   font-family: $fontName;
 
+  .nav-bar {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    padding: 0 20px;
+    display: flex;
+
+    .nav-item {
+      display: block;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      text-decoration: none;
+      color: gray;
+      font-weight: 500;
+
+      &:hover {
+        background: #3077C6;
+        color: white;
+      }
+    }
+  }
+
   .container {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
 
+    .page-title {
+      color: #3077C6;
+      margin: 0;
+      margin-bottom: 40px;
+      font-size: 36pt;
+    }
+
     .logo-container {
+      width: 50%;
+      height: 40%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 10px 20px;
+      flex-wrap: wrap;
 
       .logo {
         width: 100px;
+        padding: 10px 20px;
       }
 
       .babel-logo {
         width: 170px;
+        padding: 10px 20px;
       }
 
       .typescript-logo {
         width: 70px;
+        padding: 10px 20px;
       }
       
       h3: {
@@ -40,6 +78,5 @@ body {
         font-size: 14;
       }
     }
-    
   }
 }
